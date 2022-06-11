@@ -1,0 +1,142 @@
+.main{
+  background-color: var(--background-color-04);
+  padding-bottom: 20px;
+  max-width: var(--max-width);
+  border-left: 1px solid var(--background-color-02);
+  border-right: 1px solid var(--background-color-02);
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.main__title{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 10px;
+  color: var(--text-color-03);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form__subtitle{
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid var(--text-color-03);
+  color: var(--text-color-01);
+  margin: 10px;
+}
+
+.form__subtitle--secondary{
+  margin-top: 25px;
+}
+
+.form__fieldset{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
+
+.form__label{
+  font-size: 1.2rem; 
+  width: 30%; 
+}
+
+.form__input{
+  height: 30px;
+  width: 30%;
+  text-align: center;
+}
+
+.form__input--bigger{
+  height: 30px;
+  width: 65%;
+  text-align: center;
+}
+
+.form__option{
+  height: 36px;
+  width: 35%;
+  text-align: center;
+}
+
+.form__button{
+  width: 80%;
+  height: 55px;
+  margin: auto;
+  margin-top: 20px;
+  color: var(--text-color-02);
+  background-color: var(--background-color-03);
+  border: 1px solid var(--background-color-03);
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form__button:hover, .form__button:active{
+  background-color: var(--background-color-02);
+  color: var(--text-color-03);
+  border-color: var(--text-color-03);
+  transform: scale(1.1);
+}
+
+.results{  
+  margin-top: 20px;  
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  border: 4px solid var(--text-color-03);
+  border-radius: 30px 0;
+  background-color: var(--background-color-04);
+}
+
+.results__output--highlight{
+  font-size: 1.4rem;
+  color: var(--highlight-color-01);
+  padding: 2px;
+}
+
+.results__output--highlight-main{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--highlight-color-01);
+}
+
+.results__error-title{
+  color: red;
+  font-size: 1.4rem;
+}
+
+.results__error-element{
+  font-size: 1.1rem;  
+}
+
+.results__error-simbol{
+  color: red;
+}
+
+
+@media screen and (min-width: 400px) {
+  .main{
+    margin: auto;
+  }
+
+  .form__input{
+    width: 43%;
+  }
+
+  .form__option{
+    width: 20%;
+  }  
+
+  .results{  
+    font-size: 1.5rem;
+  }
+}

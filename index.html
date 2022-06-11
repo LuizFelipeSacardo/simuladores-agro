@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+  <title>Simulador | TAXA MIX</title>
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+<body>
+  <header class="header">
+      <input type="checkbox" class="header__check" id="header__check">
+      <label for="header__check" class="header__icon"><img class="header__menu-icon" src="assets/images/menu.png" alt=""></label>
+  
+      <div class="header__sidebar">
+        <nav class="header__sidebar-nav">
+          <a href="#"><div class="header__sidebar-title">SIMULADORES</div></a>
+          <a href="index.html"><div class="header__sidebar-link">TAXA MIX</div></a>
+          <a href="averageBalance.html"><div class="header__sidebar-link">SALDO MÉDIO</div></a>
+        </nav>
+      </div>
+
+    <h1 class="header__title">Simulador TAXA MIX</h1>
+  </header>
+
+  <main class="main">
+    <h2 class="main__title">Preencha os campos abaixo e clique em "simular"</h2>
+    
+    <form class="form" id="form">
+      <h3 class="form__subtitle">Recurso Controlado (R.O, Pronamp, etc):</h3>
+      <fieldset class="form__fieldset">
+        <label for="value01" class="form__label">Valor:</label>
+        <input type="number" class="form__input--bigger" id="value01" placeholder="ex: 1000000.00" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="tax01" class="form__label">Taxa (a.a):</label>
+        <input type="number" class="form__input--bigger" id="tax01" placeholder="ex: 5.5" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="periods01" class="form__label">Prazo:</label>
+        <input type="number" class="form__input" id="periods01" placeholder="ex: 14" required>
+        <select name="periodType01" class="form__option" id="periodType01">
+          <option value="0" class="form__option">-Selecione-</option>
+          <option value="1" class="form__option">Dias</option>
+          <option value="30" class="form__option">Meses</option>
+          <option value="360" class="form__option">Anos</option>
+        </select>
+      </fieldset>
+
+      <h3 class="form__subtitle form__subtitle--secondary">Recurso Livre (R.L, CPR, etc):</h3>
+      <fieldset class="form__fieldset">
+        <label for="" class="form__label">Valor:</label>
+        <input type="number" class="form__input--bigger" id="value02" placeholder="ex: 1000000.00" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="tax02" class="form__label">Taxa (a.a):</label>
+        <input type="number" class="form__input--bigger" id="tax02" placeholder="ex: 17.0" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="" class="form__label">Prazo:</label>
+        <input type="number" class="form__input" id="periods02" placeholder="ex: 12" required>
+        <select name="periodType02" class="form__option" id="periodType02">
+          <option value="0" class="form__option">-Selecione-</option>
+          <option value="1" class="form__option">Dias</option>
+          <option value="30" class="form__option">Meses</option>
+          <option value="360" class="form__option">Anos</option>
+        </select>
+      </fieldset>
+
+      <button type="submit" class="form__button" id="button">Simular</button>
+      
+    </form>
+
+    <section class="results hide">
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__info">Desenvolvido por: Luiz Felipe Sacardo</p>
+    <p class="footer__contact">Erros, problemas ou duvidas? envie-nos um <a href="mailto:luizfelipe_1992@hotmail.com?subject=Erro/Problema/Duvida" title="">e-mail</a></p>
+  </footer>
+  
+</body>
+
+  <script src="assets/js/index.js"></script>
+
+</html>

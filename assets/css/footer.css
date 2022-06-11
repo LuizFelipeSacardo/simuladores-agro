@@ -1,0 +1,35 @@
+.footer{
+  background-image: linear-gradient(var(--background-color-02), var(--background-color-01));
+  color: var(--text-color-01);
+  text-align: center;
+  border: 1px solid var(--background-color-02);
+  border-radius: 0 0 15px 15px;  
+  max-width: var(--max-width);
+  height: 100px; 
+  margin: 0;
+  padding: 0 10px;
+}
+
+.footer__info, .footer__contact{
+  text-align: center;
+  color: var(--text-color-03);
+  font-size: 0.6rem;  
+  margin: 0;
+}
+
+.footer__info{
+  padding-top: 30px;
+  font-size: 0.9rem;
+  padding-top: 65px;
+}
+
+.footer__contact a{
+  color: var(--text-color-03);
+}
+
+@media screen and (min-width:480px) {
+  .footer{
+    margin: auto;
+    height: 100px;   
+  }
+}

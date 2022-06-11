@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+  <title>Simulador | TAXA MIX</title>
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" class="header__check" id="header__check">
+    <label for="header__check" class="header__icon"><img class="header__menu-icon" src="assets/images/menu.png" alt=""></label>
+
+    <div class="header__sidebar">
+      <nav class="header__sidebar-nav">
+        <a href="#"><div class="header__sidebar-title">SIMULADORES</div></a>
+        <a href="index.html"><div class="header__sidebar-link">TAXA MIX</div></a>
+        <a href="averageBalance.html"><div class="header__sidebar-link">SALDO MÉDIO</div></a>
+      </nav>
+    </div>
+
+    <h1 class="header__title">Simulador SALDO MÉDIO</h1>
+  </header>
+
+  <main class="main">
+    <h2 class="main__title">Preencha o valor e a data de liberação/liquidação e clique em "simular"</h2>
+    
+    <form class="form" id="averageBalanceForm">
+      <h3 class="form__subtitle">Dados:</h3>
+      <fieldset class="form__fieldset">
+        <label for="value01" class="form__label">Valor:</label>
+        <input type="number" class="form__input--bigger" id="averageBalance" placeholder="ex: 1000000.00" required>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label for="datePicker" class="form__label">Data:</label>
+        <input type="date" class="form__input--bigger" name="datePicker" id="datePicker" required
+      </fieldset>
+      </fieldset>    
+      <button type="submit" class="form__button" id="averageBalanceSimButton">Simular</button>
+      
+    </form>
+
+    <section class="results hide">
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__info">Desenvolvido por: Luiz Felipe Sacardo</p>
+    <p class="footer__contact">Erros, problemas ou duvidas? envie-nos um <a href="mailto:luizfelipe_1992@hotmail.com?subject=Erro/Problema/Duvida" title="">e-mail</a></p>
+  </footer>
+  
+</body>
+
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/averageBalance.js"></script>
+
+</html>

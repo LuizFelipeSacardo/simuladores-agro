@@ -1,0 +1,19 @@
+:root{
+  --background-color-01: rgba(172, 219, 95, 0.5);
+  --background-color-02: rgba(81, 145, 228, 0.3);
+  --background-color-03: rgb(109, 110, 108);
+  --background-color-04: rgba(81, 145, 228, 0.05);
+
+
+  --text-color-01: black;
+  --text-color-02: white;
+  --text-color-03: rgb(109, 110, 108);
+
+  --highlight-color-01: green;
+
+  --max-width: 640px;
+}
+
+.hide{
+  display: none;
+}
